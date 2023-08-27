@@ -1,6 +1,6 @@
 # UDP Packet Exchange Example
 
-This repository contains a simple example of how to exchange packets using UDP between a server and a client. The client sends packets with incremental numbers, and the server receives and acknowledges them.
+This repository contains a simple example of how to exchange packets using UDP between a server and a client. The client sends packets with incremental numbers, and the server receives and acknowledges them then sends required packet.
 
 ## Prerequisites
 

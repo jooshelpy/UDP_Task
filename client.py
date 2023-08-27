@@ -1,7 +1,7 @@
 import socket as sk
 import time
 
-IPaddress = "127.0.0.1"
+IPaddress = "197.160.225.16"
 port = 12345
 
 packet = 0
@@ -16,9 +16,8 @@ sock.connect((IPaddress, port))
 while True:
     time.sleep(0.5)
     
-    
     print(f"Sent packet {packet}")
-   
+    
     packet=str(packet)
 
     sock.sendto(packet.encode('utf-8'), (IPaddress, port))
@@ -30,6 +29,3 @@ while True:
     print(f"Received packet #{packet}")
     packet = int(packet)
     packet+=1
-
-    
-    

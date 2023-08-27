@@ -7,7 +7,7 @@ Port = 12345
 server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 server.bind((Host, Port))
 
-server.listen(5)  # listen for connections with maximum of 5 connections in queue
+  # listen for connections with maximum of 5 connections in queue
 print(f'Listening on IP: {Host}  and Port: {Port}...') 
 
 packet_number = 0
@@ -17,10 +17,11 @@ while True:
 
     if msg == "exit":
         break
+    packet_number=msg
 
-    packet_to_send = f"Packet {packet_number}".encode()
+    packet_to_send = f"{packet_number}".encode()
     server.sendto(packet_to_send, client_address)
     print(f"Sent packet {packet_number} to {client_address}")
-    packet_number += 1
+  
 
 server.close()        

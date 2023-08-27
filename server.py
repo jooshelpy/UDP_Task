@@ -2,7 +2,7 @@ import socket
 
 # local ip address
 Host = socket.gethostbyname(socket.gethostname())
-Port = 9000
+Port = 12345
 
 server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 server.bind((Host, Port))

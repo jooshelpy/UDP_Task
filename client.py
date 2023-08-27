@@ -1,7 +1,7 @@
 import socket as sk
 
 # setting IP and port numbers
-IPaddress = "192.168.1.108"
+IPaddress = "197.160.172.21"
 port = 12345
 
 # client connects with server
